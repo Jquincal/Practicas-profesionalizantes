@@ -1,0 +1,196 @@
+
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --light-bg: #ecf0f1;
+    --success-color: #27ae60;
+    --warning-color: #f39c12;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 76px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><polygon fill="rgba(255,255,255,0.1)" points="0,1000 1000,0 1000,1000"/></svg>');
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.section-title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: var(--secondary-color);
+}
+
+.service-card, .product-card {
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    height: 100%;
+}
+
+.service-card:hover, .product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.service-icon {
+    font-size: 3rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    background: var(--secondary-color);
+    border: var(--secondary-color);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: var(--primary-color);
+    border: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.footer {
+    background: var(--primary-color);
+    color: white;
+}
+
+.contact-form {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.page-section {
+    display: none;
+}
+
+.page-section.active {
+    display: block;
+}
+
+.stats-section {
+    background: var(--light-bg);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.product-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.navbar {
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.fade-in {
+    animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.contact-info {
+    background: var(--primary-color);
+    color: white;
+    border-radius: 10px;
+}
+
+.contact-info h5 {
+    color: var(--secondary-color);
+}
+
+.alert-success {
+    display: none;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+.testimonial-section {
+    background: var(--light-bg);
+}
+
+.testimonial-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 2rem;
+    margin: 1rem 0;
+}
+
+.testimonial-author {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--secondary-color);
+}
+footer.footer {
+    display: block !important;
+    margin-top: 50px;
+    z-index: 10;
+    position: relative;
+}

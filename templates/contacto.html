@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - TechSoft Solutions</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="../styles/tech.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <i class="fas fa-code text-primary me-2"></i>
+        TechSoft Solutions
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Sobre Nosotros</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page-section active" id="contact">
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mb-5">
+            <h2 class="section-title">Contáctanos</h2>
+            <p class="lead">¿Tienes un proyecto en mente? Completa el formulario y nos comunicaremos contigo a la brevedad.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="contact-form p-4">
+              <form action="#" method="POST">
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label class="form-label" for="name">Nombre *</label>
+                    <input class="form-control" id="name" name="name" type="text" required>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label class="form-label" for="email">Email *</label>
+                    <input class="form-control" id="email" name="email" type="email" required>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label class="form-label" for="phone">Teléfono</label>
+                    <input class="form-control" id="phone" name="phone" type="tel">
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label class="form-label" for="company">Empresa</label>
+                    <input class="form-control" id="company" name="company" type="text">
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label" for="service">Servicio de Interés</label>
+                  <select class="form-select" id="service" name="service">
+                    <option value="">Selecciona un servicio</option>
+                    <option value="web">Desarrollo Web</option>
+                    <option value="mobile">Apps Móviles</option>
+                    <option value="erp">Sistemas Empresariales</option>
+                    <option value="cloud">Cloud Computing</option>
+                    <option value="analytics">Analytics & BI</option>
+                    <option value="consulting">Consultoría IT</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label" for="message">Mensaje *</label>
+                  <textarea class="form-control" id="message" name="message" rows="5" required placeholder="Cuéntanos sobre tu proyecto..."></textarea>
+                </div>
+                <div class="text-center">
+                  <button class="btn btn-primary btn-lg px-5" type="submit">
+                    <i class="fas fa-paper-plane me-2"></i>Enviar Mensaje
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="contact-info p-4">
+              <h5><i class="fas fa-map-marker-alt me-2"></i> Dirección</h5>
+              <p class="mb-4">Av. San Martín 1234<br>Mendoza, Argentina<br>CP 5500</p>
+              <h5><i class="fas fa-phone me-2"></i> Teléfono</h5>
+              <p class="mb-4">+54 261 123-4567</p>
+              <h5><i class="fas fa-envelope me-2"></i> Email</h5>
+              <p class="mb-4">info@techsoftsolutions.com</p>
+              <h5><i class="fas fa-clock me-2"></i> Horarios</h5>
+              <p class="mb-0">Lunes a Viernes: 9:00 - 18:00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

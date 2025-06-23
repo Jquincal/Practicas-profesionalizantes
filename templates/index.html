@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSoft Solutions - Desarrollo de Software</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+   <link href="../styles/tech.css" rel="stylesheet">
+</head>
+<body>
+<main>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" onclick="showSection('home')">
+                <i class="fas fa-code text-primary me-2"></i>TechSoft Solutions
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="nosotros.html">Sobre Nosotros</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   
+    <div id="home" class="page-section active">
+        
+        <section class="hero-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 hero-content">
+                        <h1 class="display-4 fw-bold mb-4 fade-in">Transformamos Ideas en Software Innovador</h1>
+                        <p class="lead mb-4 fade-in">Desarrollamos soluciones tecnológicas personalizadas que impulsan el crecimiento de tu negocio. Desde aplicaciones web hasta sistemas empresariales complejos.</p>
+                        <div class="fade-in">
+                            <button class="btn btn-primary btn-lg me-3" onclick="showSection('services')">
+                                Ver Servicios <i class="fas fa-arrow-right ms-2"></i>
+                            </button>
+                            <button class="btn btn-outline-light btn-lg" onclick="showSection('contact')">
+                                Contáctanos
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-center fade-in">
+                        <i class="fas fa-laptop-code" style="font-size: 15rem; opacity: 0.8;"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+  
+        <section class="stats-section py-5">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-3 mb-4">
+                        <div class="stat-number">150+</div>
+                        <p class="mb-0">Proyectos Completados</p>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="stat-number">50+</div>
+                        <p class="mb-0">Clientes Satisfechos</p>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="stat-number">5</div>
+                        <p class="mb-0">Años de Experiencia</p>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="stat-number">24/7</div>
+                        <p class="mb-0">Soporte Técnico</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-5">
+                        <h2 class="section-title">¿Por qué elegirnos?</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="text-center">
+                            <i class="fas fa-rocket service-icon"></i>
+                            <h4>Desarrollo Ágil</h4>
+                            <p>Metodologías ágiles para entregar resultados rápidos y de calidad, adaptándonos a tus necesidades cambiantes.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="text-center">
+                            <i class="fas fa-shield-alt service-icon"></i>
+                            <h4>Seguridad Garantizada</h4>
+                            <p>Implementamos las mejores prácticas de seguridad para proteger tu información y la de tus usuarios.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="text-center">
+                            <i class="fas fa-headset service-icon"></i>
+                            <h4>Soporte 24/7</h4>
+                            <p>Equipo de soporte técnico disponible las 24 horas para resolver cualquier inconveniente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      
+        <section class="testimonial-section py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-5">
+                        <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="testimonial-card">
+                            <div class="mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p>"Excelente trabajo. Entregaron nuestro sistema ERP en tiempo récord y con la más alta calidad."</p>
+                            <div class="testimonial-author">- María González, CEO TechCorp</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial-card">
+                            <div class="mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p>"Su app móvil incrementó nuestras ventas en un 300%. Altamente recomendados."</p>
+                            <div class="testimonial-author">- Carlos Ruiz, Director ComercialPlus</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial-card">
+                            <div class="mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p>"Profesionales excepcionales. Su soporte técnico es incomparable en el mercado."</p>
+                            <div class="testimonial-author">- Ana López, CTO InnovaTech</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+<footer class="footer py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <h5 class="text-white mb-3">
+                            <i class="fas fa-code text-primary me-2"></i>TechSoft Solutions
+                        </h5>
+                        <p class="text-light">Transformamos ideas en software innovador. Somos tu socio tecnológico ideal para llevar tu negocio al siguiente nivel con soluciones de software personalizadas y de alta calidad.</p>
+                        <div class="social-links">
+                            <a href="#" class="text-light me-3"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-light me-3"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="text-light me-3"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-light"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-6 mb-4">
+                        <h6 class="text-white mb-3">Servicios</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#" class="text-light text-decoration-none" onclick="showSection('services')">Desarrollo Web</a></li>
+                            <li class="mb-2"><a href="#" class="text-light text-decoration-none" onclick="showSection('services')">Apps Móviles</a></li>
+                            <li class="mb-2"><a href="#" class="text-light text-decoration-none" onclick="showSection('services')">Sistemas ERP</a></li>
+                            <li class="mb-2"><a href="#" class="text-light text-decoration-none" onclick="showSection('services')">Cloud Computing</a></li>
+                            <li class="mb-2"><a href="#" class="text-light text-decoration-none" onclick="showSection('services')">Analytics & BI</a></li>
+                            <li class="mb-2"><a href="#" class="text-light text-decoration-none" onclick="showSection('services')">Consultoría IT</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-6 mb-4">
+                        <h6 class="text-white mb-3">Productos</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#" class="text-light text-decoration-none" onclick="showSection('products')">ERP Starter</a></li>
+                            <li class="mb-2"><a href="#" class="text-light text-decoration-none" onclick="showSection('products')">CRM Professional</a></li>
+                            <li class="mb-2"><a href="#" class="text-light text-decoration-none" onclick="showSection('products')">Analytics Suite</a></li>
+                            <li class="mb-2"><a href="#" class="text-light text-decoration-none" onclick="showSection('products')">E-commerce Pro</a></li>
+                            <li class="mb-2"><a href="#" class="text-light text-decoration-none" onclick="showSection('products')">HR Management</a></li>
+                            <li class="mb-2"><a href="#" class="text-light text-decoration-none" onclick="showSection('products')">Project Manager</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <h6 class="text-white mb-3">Contacto</h6>
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                            <span class="text-light">Av. San Martín 1234, Mendoza, Argentina</span>
+                        </div>
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="fas fa-phone text-primary me-3"></i>
+                            <span class="text-light">+54 261 123-4567</span>
+                        </div>
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="fas fa-envelope text-primary me-3"></i>
+                            <span class="text-light">info@techsoftsolutions.com</span>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-clock text-primary me-3"></i>
+                            <span class="text-light">Lun - Vie: 9:00 - 18:00</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm" onclick="showSection('contact')">
+                            <i class="fas fa-paper-plane me-2"></i>Contáctanos
+                        </button>
+                    </div>
+                </div>
+                
+                <hr class="border-secondary my-4">
+                
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="text-light mb-0">&copy; 2025 TechSoft Solutions. Todos los derechos reservados.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item">
+                                <a href="#" class="text-light text-decoration-none">Política de Privacidad</a>
+                            </li>
+                            <li class="list-inline-item text-light">|</li>
+                            <li class="list-inline-item">
+                                <a href="#" class="text-light text-decoration-none">Términos de Servicio</a>
+                            </li>
+                            <li class="list-inline-item text-light">|</li>
+                            <li class="list-inline-item">
+                                <a href="#" class="text-light text-decoration-none">Cookies</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+    </html>
